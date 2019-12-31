@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Awesome Python App</title>
+  </head>
+  <body>
+    <h1>Python Output</h1>
+    <br>
+    <br>
+    <p id="python-output"></p>
+    <div id="app">
+      name: {{name}}
+      <br>
+      <input type="text" placeholder="nombre" v-model="data.name">
+      <br/>
+      <button v-on:click="run_py">Rerun</button>
+    </div>
+  </body>
+  <script src="vue.js"></script>
+  <script src="index.js"></script>
+</html>

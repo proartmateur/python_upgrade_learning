@@ -1,0 +1,16 @@
+{
+  "name": "myawesomepythonapp",
+  "main": "index.html",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nw"
+  },
+  "author": "Enrique Nieto",
+  "license": "ISC",
+  "description": "Test nwjs and python",
+  "dependencies": {
+    "nw": "^0.43.2",
+    "python-shell": "^1.0.8"
+  }
+}
