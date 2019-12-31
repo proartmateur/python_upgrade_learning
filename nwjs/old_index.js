@@ -1,3 +1,6 @@
+
+
+
 var win = nw.Window.get();
 win.showDevTools()
 
@@ -68,3 +71,4 @@ PythonShell.run('echo.py', options , function (err, res) {
 
 });*/
 console.log(`Current directory: ${process.cwd()}`);
+console.log("Node:",process.version);

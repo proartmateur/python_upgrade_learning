@@ -6,7 +6,8 @@
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nw"
+    "start": "nw",
+    "build": "tsc --listFiles"
   },
   "main": "index.html",
   "chromium-args": "--load-extension='./node_modules/nw-vue-devtools/extension'",
@@ -18,10 +19,14 @@
     "title": "VUe Python"
   },
   "dependencies": {
+    "@types/node": "^13.1.2",
     "nw": "^0.43.2",
     "python-shell": "^1.0.8"
   },
   "devDependencies": {
-    "nw-vue-devtools": "^1.3.0"
+    "dojo-loader": "^2.0.0-beta.7",
+    "nw-vue-devtools": "^1.3.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
   }
 }

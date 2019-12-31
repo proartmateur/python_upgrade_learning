@@ -1,0 +1,14 @@
+{
+	"version": "1.7.0",
+	"compilerOptions": {
+		"target": "es6",
+		"module": "umd",
+		"outDir": "lib",
+		"noImplicitAny": true,
+		"moduleResolution": "node"
+	},
+	"files": [
+		"./src/main.ts",
+		"./typings/tsd.d.ts"
+	]
+}
