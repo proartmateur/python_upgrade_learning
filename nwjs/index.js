@@ -1,3 +1,6 @@
+var win = nw.Window.get();
+win.showDevTools()
+
 let {PythonShell} = require('python-shell');
 let fdata = {};
 
@@ -26,6 +29,22 @@ const app = new Vue({
               console.log(res);
               console.log("type:",typeof(res));
               this.name = res[0].name;
+            });
+        },
+        run_ls: function(){
+            const { spawn } = require('child_process');
+            const ls = spawn('ls', ['-lh', '/usr']);
+
+            ls.stdout.on('data', (data) => {
+              console.log(`stdout: ${data}`);
+            });
+
+            ls.stderr.on('data', (data) => {
+              console.error(`stderr: ${data}`);
+            });
+
+            ls.on('close', (code) => {
+              console.log(`child process exited with code ${code}`);
             });
         }
     }
